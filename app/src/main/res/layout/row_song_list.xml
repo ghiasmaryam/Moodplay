@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_10">
+
+    <ImageView
+        android:layout_width="@dimen/size_40"
+        android:layout_height="@dimen/size_40"
+        android:background="@drawable/btn_background"
+        android:contentDescription="@string/music_logo"
+        android:padding="@dimen/size_5"
+        android:src="@drawable/row_music_icon" />
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/size_5"
+        android:textAppearance="@style/titleText" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

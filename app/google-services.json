@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "360110041809",
+    "project_id": "mood-based-music-application",
+    "storage_bucket": "mood-based-music-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:360110041809:android:3626a4e9bb0ad002eb33f0",
+        "android_client_info": {
+          "package_name": "com.music.moodplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "360110041809-hkuql4ci91kh0pivi4khch3rh2ra49s0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.music.moodplay",
+            "certificate_hash": "a339b99b7bc6002a32b7b6d4fda50373d6e043c0"
+          }
+        },
+        {
+          "client_id": "360110041809-mhb6s86bv5781d5egr8e52fqm3bhqrs7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ8oqWUxGkQu6XFyJQYoA49R7TnO2SaqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "360110041809-mhb6s86bv5781d5egr8e52fqm3bhqrs7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

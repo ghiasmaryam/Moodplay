@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.fragments.DisplaySongsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:padding="@dimen/size_10"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5"
+
+            android:contentDescription="@string/go_back"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            app:tint="@color/black" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/pulseRateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_50"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pulse_rate"
+            android:textAppearance="@style/titleText" />
+
+        <TextView
+            android:id="@+id/pulseRateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/titleText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/currentMoodLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_10"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/pulseRateLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_mood"
+            android:textAppearance="@style/titleText" />
+
+        <TextView
+            android:id="@+id/currentMoodTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="@style/titleText" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moodImage"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_50"
+        android:contentDescription="@string/mood_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentMoodLayout" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/languageBtnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:layout_marginTop="@dimen/size_20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentMoodLayout">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/englishBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_background"
+            android:padding="@dimen/size_10"
+            android:gravity="center"
+            android:textAppearance="@style/normalTextBlack"
+            android:text="@string/english_songs" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/hindiBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/size_30"
+            android:background="@drawable/btn_background"
+            android:padding="@dimen/size_10"
+            android:gravity="center"
+            android:textAppearance="@style/normalTextBlack"
+            android:text="@string/hindi_songs" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/favoriteLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_40"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/size_30"
+            android:elevation="@dimen/size_5"
+            app:cardCornerRadius="@dimen/size_5"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_700"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_5">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="@dimen/size_30"
+                    android:layout_height="@dimen/size_30"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/heart_favorite" />
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/size_5"-->
+<!--                    android:text="@string/favourite_songs_folder"-->
+<!--                    android:textAppearance="@style/titleTextWhite" />-->
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:id="@+id/musicIcon"
+        android:layout_width="@dimen/size_50"
+        android:layout_height="@dimen/size_50"
+        android:layout_marginTop="@dimen/size_10"
+        android:layout_marginStart="@dimen/size_20"
+        android:src="@drawable/music_icon"
+        android:contentDescription="@string/music_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/languageBtnLayout"/>
+
+    <TextView
+        android:id="@+id/selectedSongTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="@dimen/size_10"
+        android:textAppearance="@style/titleText"
+        app:layout_constraintBottom_toTopOf="@+id/songList"
+        app:layout_constraintTop_toBottomOf="@+id/languageBtnLayout"
+        app:layout_constraintStart_toEndOf="@+id/musicIcon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/songList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/size_10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musicIcon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

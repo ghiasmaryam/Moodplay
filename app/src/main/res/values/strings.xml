@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">MoodPlay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cameraPermissionRequired">Camera permission is required for this application to work.</string>
+    <string name="noFlashWarning">Measurement without flash is less reliable.</string>
+    <string name="output_header_template">Heart rate on %s</string>
+    <string name="output_detected_peaks_header">Detected Peaks:</string>
+    <string name="send_output_to">Send output to:</string>
+    <string name="separator">,</string>
+    <string name="row_separator">\n</string>
+    <string name="raw_values">Measurements (Timestamp, Value)</string>
+    <string name="new_measurement">New Measurement</string>
+    <string name="export_result">Export Result</string>
+    <string name="export_details">Export Details</string>
+    <string name="dateFormat">yyyy-MM-dd\'T\'HH:mm:ssZZZZZ</string>
+    <string name="dateFormatGranular">yyyy-MM-dd\'T\'HH:mm:ss.SSSZZZZZ</string>
+    <string name="camera_not_found">Camera not available.</string>
+    <string name="welcome">Welcome</string>
+    <string name="app_logo">App Logo</string>
+    <string name="start">Start</string>
+    <string name="scan_your_index_finger">Scan your index Finger</string>
+    <string name="ok">OK</string>
+    <string name="music_logo">Music Logo</string>
+    <string name="go_back">Go Back</string>
+    <string name="favorite">Favorite</string>
+    <string name="playlist">PlayList</string>
+    <string name="english_songs">English Songs</string>
+    <string name="hindi_songs">Hindi Songs</string>
+    <string name="favourite_songs_folder">Favourite Songs Folder</string>
+    <string name="pulse_rate">Pulse Rate:</string>
+    <string name="current_mood">Current Mood:</string>
+    <string name="_00_00">00:00</string>
+    <string name="previous_song">Previous Song</string>
+    <string name="playpause">Play Pause</string>
+    <string name="next_song">Next Song</string>
+    <string name="no_internet_image">No internet Image</string>
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="check_your_internet_connection_and_try_again">Check your Internet Connection and Try Again</string>
+    <string name="pulse_image">Pulse Image</string>
+    <string name="mood_image">Mood Image</string>
+    <plurals name="measurement_output_template">
+        <item quantity="zero">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="one">Pulse: %2.1f (%d cycle in %2.1f seconds)</item>
+        <item quantity="other">Pulse: %2.1f (%d cycles in %2.1f seconds)</item>
+    </plurals>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/noInternet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/no_internet_image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/size_100"
+        android:src="@drawable/no_internet"
+        android:contentDescription="@string/no_internet_image" />
+
+    <TextView
+        android:id="@+id/no_internet_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_internet_image"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_internet_connection"
+        android:textAllCaps="true"
+        android:textAppearance="@style/titleText" />
+
+    <TextView
+        android:id="@+id/no_internet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_internet_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/size_50"
+        android:layout_marginVertical="@dimen/size_20"
+        android:gravity="center"
+        android:text="@string/check_your_internet_connection_and_try_again"
+        android:textAppearance="@style/titleText" />
+
+    <!--        <Button-->
+    <!--            android:id="@+id/try_again_button"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@id/no_internet_text"-->
+    <!--            android:layout_centerHorizontal="true"-->
+    <!--            android:backgroundTint="@color/black"-->
+    <!--            android:paddingHorizontal="32dp"-->
+    <!--            android:text="Try Again"-->
+    <!--            android:textAllCaps="false"-->
+    <!--            android:textColor="@color/white" />-->
+
+</RelativeLayout>
